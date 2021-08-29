@@ -37,7 +37,7 @@ app.get("/api/candidates", (req, res) => {
   });
 });
 
-// Get a single candidate
+// Get/Read a single candidate
 app.get("/api/candidate/:id", (req, res) => {
   const sql = `SELECT * FROM candidates WHERE id = ?`;
   const params = [req.params.id];
